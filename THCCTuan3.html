@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window width and height</title>
+</head>
+<body>
+    <div id="ahihi">
+
+        
+    <button onclick="GetHW()">Get HW</button>
+    <script>
+        let size = document.getElementById("ahihi")
+        size.innerText = `Window size: width=${window.innerWidth}, height=${window.innerHeight}`;
+
+        window.onresize = function()
+        {
+            size.innerText = `Window size: width=${window.innerWidth}, height=${window.innerHeight}`;
+        }
+    </script>
+</body>
+</html>
